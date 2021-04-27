@@ -27,6 +27,9 @@ Odkazy na stránky Microsoftu s informacemi o přesměrování.
 * [Doporučujeme zobrazit tento web v Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2151617)
 * [Web, na který se snažíte přejít, nefunguje v Internet Exploreru](https://go.microsoft.com/fwlink/?linkid=2135547)
 
+Nevýhody JS řešení oproti Microsoft žádosti je to, že uživatel bude přesměrován i tehdy, když má IE ale zároveň nemá Edge.
+Na druhou stranu Edge byl zpětně doinstalován i do starých Win7. Takže uživatelů používajících IE, kteří nemají Edge by mělo být v dnešní době minimum.
+
 ## Varovná hláška
 
 ```HTML
@@ -45,11 +48,10 @@ if (isIE() && document.cookie.indexOf('IE') == -1 ){
 
 
 
+## Noscript
+Někdo může mít JavaScript i vypnutý a v takovém případě bude fungovat pouze MS řešení přes compatibility list.
 
-## Noscript 
-Někdo může mít JavaScript i vypnutý a v takovém případě bude fungovat pouze MS řešení přes compatibility list. 
-
-Upozornění na vypnutý JavaScript.
+Níže příklad na upozornění na vypnutý JavaScript.
 
 ```html
 <noscript>
@@ -60,5 +62,4 @@ Upozornění na vypnutý JavaScript.
 </noscript>
 ```
 
-Nevýhoda JS řešení oproti Microsoft žádosti je to, že uživatel bude přesměrován i tehdy, když má IE ale zároveň nemá Edge.
-Na druhou stranu Edge byl zpětně doinstalován i do starých Win7. Takže uživatelů používajících IE, kteří nemají Edge by mělo být v dnešní době minimum.
+
